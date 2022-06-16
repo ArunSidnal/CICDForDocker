@@ -1,5 +1,4 @@
 name: Contineous Integration adn Deployment
-
 on:
   push:
     branches:
@@ -19,5 +18,5 @@ jobs:
       run: dotnet restore
     - name: build the app
       run: dotnet build -c Release --no-restore
-         
+
     
