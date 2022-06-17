@@ -2,8 +2,7 @@ name: Contineous Integration adn Deployment1
 on:
   push:
     branches:
-      -main
-      
+      -main      
 jobs:
   build:
    runs on: ubuntu-latest
