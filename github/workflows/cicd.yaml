@@ -1,4 +1,4 @@
-name: Contineous Integration adn Deployment
+name: Contineous Integration adn Deployment1
 on:
   push:
     branches:
