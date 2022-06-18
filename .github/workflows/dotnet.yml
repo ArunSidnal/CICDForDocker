@@ -32,12 +32,8 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: Docker Pull and Run from Image
-      uses: fifsky/ssh-action@master
-      with: 
-       host: ${{ secrets.AWSHOST }}
-       user: ${{ secrets.AWSUSERNAME }}
-       key: ${{ secrets.AWSKEY }}
-       command: |
+      run: |
+        ssh -i ${{ secrets.AWSKEY }} ${{ secrets.AWSUSERNAME }}@${{ secrets.AWSHOST }}
         ls
         
         
