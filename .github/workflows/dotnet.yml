@@ -38,7 +38,7 @@ jobs:
        username: ${{ secrets.AWSUSERNAME }}
        key: ${{ secrets.AWSKEY }}
        port: ${{ secrets.PORT }}
-       timeout: 180
+       timeout: 180s
        script: |
         sudo su -
         docker images
