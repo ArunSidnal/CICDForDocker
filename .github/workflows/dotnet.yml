@@ -41,7 +41,7 @@ jobs:
        script: |
         sudo su -
         docker images
-        ls
+        
         
         
      
