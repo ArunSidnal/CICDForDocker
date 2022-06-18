@@ -39,8 +39,8 @@ jobs:
        key: ${{ secrets.AWSKEY }}
        port: ${{ secrets.PORT }}
        script: |
-        ls
-        ls
+        sudo su -
+        docker images
         
         
      
