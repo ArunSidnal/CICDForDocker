@@ -36,7 +36,7 @@ jobs:
       with: 
        host: ${{ secrets.AWSHOST }}
        username: ${{ secrets.AWSUSERNAME }}
-       key: ${{ secrets.AWSKEY }}
+       password: ${{ secrets.AWSPASSWORD }}
        port: ${{ secrets.PORT }}
        script: |
         sudo su -
