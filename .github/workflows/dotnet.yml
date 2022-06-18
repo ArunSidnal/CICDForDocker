@@ -32,16 +32,13 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: Docker Pull and Run from Image
-      uses: appleboy/ssh-action@master
+      uses: fifsky/ssh-action@master
       with: 
        host: ${{ secrets.AWSHOST }}
-       username: ${{ secrets.AWSUSERNAME }}
+       user: ${{ secrets.AWSUSERNAME }}
        key: ${{ secrets.AWSKEY }}
-       port: ${{ secrets.PORT }}
-       timeout: 180s
-       script: |
-        sudo su -
-        docker images
+       command: |
+        ls
         
         
         
