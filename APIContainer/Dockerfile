@@ -7,10 +7,10 @@ WORKDIR /src
 COPY ["APIContainer/APIContainer.csproj", "APIContainer_build/"]
 RUN dotnet restore "APIContainer_build/APIContainer.csproj"
 COPY . .
-RUN dotnet build "APIContainer.csproj" -c Release -o /app/build
+RUN dotnet build "APIContainer_build/APIContainer.csproj" -c Release -o /app/build
 
 FROM build as publish
-RUN dotnet publish "APIContainer.csproj" -c Release -o /app/publish
+RUN dotnet publish "APIContainer_build/APIContainer.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
