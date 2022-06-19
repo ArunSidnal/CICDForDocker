@@ -29,7 +29,7 @@ jobs:
         image: arunsidnal/myrepository
         tags: v1, latest
         registry: docker.io
-        dockerfile: APIContainer/Dockerfile
+        dockerfile: APIContainer/
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         
