@@ -40,6 +40,10 @@ jobs:
        port: ${{ secrets.PORT }}
        script: 
               sudo docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
+              sudo docker pull ${{secrets.DOCKER_USER}}:main-0bc26a1
+              sudo docker stop weatherserviceapi
+              sudo docker rm weatherserviceapi
+              sudo docker run -itd --name weatherserviceapi -p 80:8080 ${{secrets.DOCKER_USER}}:main-0bc26a1
               
               
         
