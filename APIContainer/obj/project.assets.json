@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PersonalFiles\\Docker\\DockerApi\\APIContainer\\APIContainer\\APIContainer.csproj",
+      "projectUniqueName": "C:\\PersonalFiles\\dockerFromCICD\\CICDForDocker\\APIContainer\\APIContainer.csproj",
       "projectName": "APIContainer",
-      "projectPath": "C:\\PersonalFiles\\Docker\\DockerApi\\APIContainer\\APIContainer\\APIContainer.csproj",
+      "projectPath": "C:\\PersonalFiles\\dockerFromCICD\\CICDForDocker\\APIContainer\\APIContainer.csproj",
       "packagesPath": "C:\\Users\\A379882\\.nuget\\packages\\",
-      "outputPath": "C:\\PersonalFiles\\Docker\\DockerApi\\APIContainer\\APIContainer\\obj\\",
+      "outputPath": "C:\\PersonalFiles\\dockerFromCICD\\CICDForDocker\\APIContainer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

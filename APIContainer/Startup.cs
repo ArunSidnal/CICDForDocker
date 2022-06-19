@@ -35,7 +35,7 @@ namespace APIContainer
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            if(env.IsDevelopment())
             app.UseHttpsRedirection();
 
             app.UseRouting();

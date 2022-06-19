@@ -1,4 +1,4 @@
-name: Contineous Integration adn Deployment1
+name: Contineous Integration and Deployment
 on:
   push:
     branches:
@@ -17,7 +17,12 @@ jobs:
       run: dotnet restore
     - name: build the app
       run: dotnet build -c Release --no-restore
-
-    
+    - name: Build and push docker image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: arunsidnal/myrepository
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
     
