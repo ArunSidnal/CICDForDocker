@@ -43,7 +43,7 @@ jobs:
               docker pull ${{secrets.DOCKER_USER}}:main-0bc26a1
               docker stop weatherserviceapi
               docker rm weatherserviceapi
-              docker run --detach --name weatherserviceapi -p 80:8080 ${{secrets.DOCKER_USER}}:main-0bc26a1
+              docker run --itd --name weatherserviceapi -p 80:8080 ${{secrets.DOCKER_USER}}:main-0bc26a1
               
         
         
