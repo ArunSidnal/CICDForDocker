@@ -39,6 +39,7 @@ jobs:
        key: ${{ secrets.AWSKEY }}
        port: ${{ secrets.PORT }}
        script: whoami
+          li
         
         
         
