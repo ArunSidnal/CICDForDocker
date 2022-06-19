@@ -40,10 +40,7 @@ jobs:
        port: ${{ secrets.PORT }}
        script: 
               docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
-              docker pull ${{secrets.DOCKER_USER}}:main-0bc26a1
-              docker stop weatherserviceapi
-              docker rm weatherserviceapi
-              docker run -itd --name weatherserviceapi -p 80:8080 ${{secrets.DOCKER_USER}}:main-0bc26a1
+              
               
         
         
