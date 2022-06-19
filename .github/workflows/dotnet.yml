@@ -39,7 +39,7 @@ jobs:
        key: ${{ secrets.AWSKEY }}
        port: ${{ secrets.PORT }}
        script: 
-              docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
+              sudo docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
               
               
         
