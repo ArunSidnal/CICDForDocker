@@ -38,8 +38,9 @@ jobs:
        username: ${{ secrets.AWSUSERNAME }}
        key: ${{ secrets.AWSKEY }}
        port: ${{ secrets.PORT }}
-       script: whoami
-          li
+       script: 
+              ls
+              
         
         
         
