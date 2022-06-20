@@ -43,10 +43,10 @@ jobs:
        script: |
               sudo systemctl start docker
               sudo docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
-              sudo docker pull ${{secrets.DOCKER_USER}}:latest
+              sudo docker pull ${{secrets.DOCKER_USER}}:v1
               sudo docker stop weatherserviceapi
               sudo docker rm weatherserviceapi
-              sudo docker run -d --name weatherserviceapi -p 80:8080 ${{secrets.DOCKER_USER}}:latest
+              sudo docker run -d --name weatherserviceapi -p 80:8080 ${{secrets.DOCKER_USER}}:v1
               
               
         
