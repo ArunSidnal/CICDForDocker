@@ -4,7 +4,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY [",/APIContainer.csproj", ""]
+COPY ["./APIContainer.csproj", ""]
 RUN dotnet restore "./APIContainer.csproj"
 COPY . .
 WORKDIR "/src/."
