@@ -41,6 +41,7 @@ jobs:
        key: ${{ secrets.AWSKEY }}
        port: ${{ secrets.PORT }}
        script: |
+              sudo systemctl start docker
               sudo docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
               sudo docker pull ${{secrets.DOCKER_USER}}:latest
               sudo docker stop weatherserviceapi
