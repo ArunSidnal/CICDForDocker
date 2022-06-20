@@ -13,4 +13,4 @@ RUN dotnet publish "APIContainer.csproj" -c Release -o /app/publish/service
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish/service .
-ENTRYPOINT ["dotnet", "APIContainer.csproj.dll"]
+ENTRYPOINT ["dotnet", "APIContainerAPI.dll"]
