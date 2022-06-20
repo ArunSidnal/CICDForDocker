@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\PersonalFiles\\dockerFromCICD\\CICDForDocker\\APIContainer\\APIContainer.csproj",
-        "projectName": "APIContainer",
+        "projectName": "APIContainerAPI",
         "projectPath": "C:\\PersonalFiles\\dockerFromCICD\\CICDForDocker\\APIContainer\\APIContainer.csproj",
         "packagesPath": "C:\\Users\\A379882\\.nuget\\packages\\",
         "outputPath": "C:\\PersonalFiles\\dockerFromCICD\\CICDForDocker\\APIContainer\\obj\\",
