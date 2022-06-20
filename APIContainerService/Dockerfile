@@ -4,7 +4,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["APIContainerService/APIContainer.csproj", "./"]
+COPY ["*", "./"]
 RUN dotnet build "APIContainer.csproj" -c Release -o /app/build
 
 FROM build as publish
