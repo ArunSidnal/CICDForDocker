@@ -27,7 +27,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: arunsidnal/myrepository
-        tags: v1, latest
+        tags: v2
         registry: docker.io
         dockerfile: ./APIContainerService/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -43,10 +43,10 @@ jobs:
        script: |
               sudo systemctl start docker
               sudo docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
-              sudo docker pull ${{secrets.DOCKER_USER}}:v1
+              sudo docker pull ${{secrets.DOCKER_USER}}:v2
               sudo docker stop weatherserviceapi
               sudo docker rm weatherserviceapi
-              sudo docker run -d --name weatherserviceapi -p 80:8080 ${{secrets.DOCKER_USER}}:v1
+              sudo docker run -d --name weatherserviceapi -p 80:8080 ${{secrets.DOCKER_USER}}:v2
               
               
         
